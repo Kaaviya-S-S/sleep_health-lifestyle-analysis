@@ -204,6 +204,7 @@ b <- model$coefficients[2]
 cat("\n")
 print("Regression line equation: ")
 cat("\t y = ",a,"+",b,"x",'\n\n')
+
 print("With the 'Stress level' of 4.5, 7.5, 3")
 print("The Predicted 'Quality of Sleep' values are: ")
 new_data <- data.frame(stress = c(4.5, 7.5, 3))
