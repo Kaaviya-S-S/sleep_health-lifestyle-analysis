@@ -171,12 +171,32 @@ cat("\n=========================================================================
 print("**Linear Regression**")
 cat("\n")
 
-print("Modeling a linear regression for sleep duration and quality of sleep")
-print("Sleep duration  : independent variable")
+#print("Modeling a linear regression for sleep duration and quality of sleep")
+#print("Sleep duration  : independent variable")
+#print("Quality of sleep: dependent variable")
+
+# model <- lm(qos~sleep_dur)
+# plot(qos~sleep_dur, main="plot for Regression model of Sleep duration and quality of sleep",xlab="Duration of sleep",ylab="Quality of sleep")
+# abline(coef(model),col="darkblue")
+# 
+# a <- model$coefficients[1]
+# b <- model$coefficients[2]
+# cat("\n")
+# print("Regression line equation: ")
+# cat("\t y = ",a,"+",b,"x",'\n\n')
+# 
+# print("With the 'Sleep Duration' of 7.75, 8.5, 9.125 hrs")
+# print("The Predicted 'Quality of Sleep' values are: ")
+# new_data <- data.frame(sleep_dur = c(7.75, 8.5, 9.125))
+# predicted_quality_of_sleep <- predict(model, newdata = new_data)
+# print(predicted_quality_of_sleep)
+
+print("Modeling a linear regression for stress level and quality of sleep")
+print("Stress level    : independent variable")
 print("Quality of sleep: dependent variable")
 
-model <- lm(qos~sleep_dur)
-plot(qos~sleep_dur, main="plot for Regression model of Sleep duration and quality of sleep",xlab="Duration of sleep",ylab="Quality of sleep")
+model <- lm(qos~stress)
+plot(qos~stress, main="plot for Regression model of Stress level and Quality of sleep",xlab="Stress level",ylab="Quality of sleep")
 abline(coef(model),col="darkblue")
 
 a <- model$coefficients[1]
@@ -184,13 +204,11 @@ b <- model$coefficients[2]
 cat("\n")
 print("Regression line equation: ")
 cat("\t y = ",a,"+",b,"x",'\n\n')
-
-print("With the 'Sleep Duration' of 7.75, 8.5, 9.125 hrs")
+print("With the 'Stress level' of 4.5, 7.5, 3")
 print("The Predicted 'Quality of Sleep' values are: ")
-new_data <- data.frame(sleep_dur = c(7.75, 8.5, 9.125))
+new_data <- data.frame(stress = c(4.5, 7.5, 3))
 predicted_quality_of_sleep <- predict(model, newdata = new_data)
 print(predicted_quality_of_sleep)
-
 
 cat("\n=====================================================================================================\n\n")
 
