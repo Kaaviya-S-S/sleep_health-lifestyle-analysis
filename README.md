@@ -1,4 +1,4 @@
-# SleepWell Analytics  
+# SleepWell Analysis  
 
 📊**Project Overview**  
 SleepWell Analytics is a data-driven project aimed at exploring the relationships between sleep quality, lifestyle factors, and health indicators. Using statistical analysis in **R**, this project examines how various factors such as stress levels, exercise habits, and diet impact overall sleep health. The analysis leverages visualizations and regression models to provide meaningful insights.  
